@@ -8,13 +8,14 @@ Installation
 ------------
 Just create a bookmarklet called "vizbukkit" in your browser with the following URL:
 
-javascript:(function() {
-var s=document.createElement('script');
-s.src='https://github.com/dylansmith/vizbukkit/blob/master/vizbukkit.js';
-document.head.appendChild(s);
-})();
+    javascript:(function() {
+    var s=document.createElement('script');
+    s.src='https://github.com/dylansmith/vizbukkit/blob/master/vizbukkit.js';
+    document.head.appendChild(s);
+    })();
 
 Or just drag this onto your browser toolbar:
+
 [vizbukkit](javascript:(function(){var s=document.createElement('script');s.src='https://github.com/dylansmith/vizbukkit/blob/master/vizbukkit.js';document.head.appendChild(s);})();)
 
 Usage
