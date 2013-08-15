@@ -19,8 +19,12 @@
         container: null,
         num: 20,
 
-        init: function() {
+        init: function(num) {
             var c, s;
+
+            num = parseInt(num, 10);
+            if (num) this.num = num;
+
             this.teardown();
             c = this.container = document.createElement('div');
             c.id = 'vizbukkit';
@@ -30,9 +34,11 @@
                     <a href=\"javascript:vizbukkit.teardown();\">Close</a>\
                     (Just right-click and copy image URL)\
                 </nav>";
+
             s = document.createElement('style');
             s.id = 'vizbukkit-styles';
             s.innerHTML = styles;
+
             document.body.appendChild(c);
             document.body.appendChild(s);
             this.update();
